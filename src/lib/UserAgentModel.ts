@@ -2,6 +2,10 @@ import { getModelForClass, modelOptions, prop } from "@typegoose/typegoose";
 import mongoose from "mongoose";
 
 @modelOptions({
+  schemaOptions: {
+    timestamps: true,
+    collection: "chipasuseragent",
+  },
   options: {
     allowMixed: 0,
   },

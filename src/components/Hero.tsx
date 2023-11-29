@@ -25,7 +25,7 @@ const Hero = () => {
             <div className="text-center lg:text-left mt-6 lg:mt-0">
               <div className="mb-12">
                 <h1 className="text-4xl text-center leading-normal text-orange-950 font-bold mb-4">
-                  Las mejores chipas de Buenos Aires
+                  Las mejores chipas de Corrientes
                 </h1>
                 <p className="text-gray-500 text-center leading-relaxed font-light text-xl mx-auto pb-2">
                   Hechas con amor y dedicación para satisfacer a los mejores
