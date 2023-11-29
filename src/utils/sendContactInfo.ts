@@ -39,7 +39,7 @@ export async function sendContactInfo(formData: FormData) {
 
   const options = {
     from: "javier.doxadoctor@gmail.com",
-    to: "simosa37@gmail.com",
+    to: "marceloj@gmail.com",
     subject: `Nuevo contacto para Franquicia de Chipa de ${formDataObject.name}`,
     html: htmlContent,
   };
