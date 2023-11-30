@@ -1,10 +1,8 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 
 const Nav = () => {
-  const path = usePathname();
   const [showMenu, toggleMenu] = useState<boolean>(false);
 
   const handleMobileMenu = () => {
@@ -70,7 +68,7 @@ const Nav = () => {
           <li className="relative hover:text-black">
             <Link
               className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
-              href={path === "/" ? "#services" : "/#services"}
+              href="/#services"
             >
               Nuestras Chipas
             </Link>
@@ -78,7 +76,7 @@ const Nav = () => {
           <li className="relative hover:text-black">
             <Link
               className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
-              href={path === "/" ? "#clientes" : "/#clientes"}
+              href="/#clientes"
             >
               Nuestros Clientes
             </Link>
@@ -93,8 +91,9 @@ const Nav = () => {
           </li>
           <li className="relative hover:text-black">
             <Link
+              target="_blank"
               className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
-              href={path === "/" ? "#refs" : "/#refs"}
+              href="https://api.whatsapp.com/send?phone=5493775413448"
             >
               Pedir
             </Link>

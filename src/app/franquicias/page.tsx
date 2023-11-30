@@ -1,5 +1,4 @@
 "use client";
-import Header from "@/components/Header";
 import { sendContactInfo } from "@/utils/sendContactInfo";
 import React, { useRef } from "react";
 import { useFormStatus } from "react-dom";
@@ -10,7 +9,6 @@ const Franquicias = () => {
 
   return (
     <main>
-      <Header />
       <div
         id="contact"
         className="section relative mt-32 pb-20 bg-white dark:bg-gray-800"

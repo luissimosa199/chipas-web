@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="container xl:max-w-6xl mx-auto px-4">
         <div className="flex flex-wrap flex-col gap-4 -mx-4 justify-center">
           <div className="flex-shrink max-w-full px-4 sm:px-12 lg:px-18 w-full sm:w-9/12 lg:w-1/2 self-center">
-            <div className="bg-gray-200 w-full h-fit mx-autosm:w-[484px] sm:h-[848px]">
+            <div className="bg-gray-200 w-full h-fit mx-autosm:w-[484px]">
               <Video userAgentCookie={userAgentCookie} />
             </div>
           </div>
