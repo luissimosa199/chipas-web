@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
       <nav className="main-nav">
         <div className="container flex justify-between xl:max-w-6xl mx-auto px-4">
           <div className="mx-w-10 text-4xl font-bold capitalize text-orange-950 flex items-center">
-            La Estación del Chipa
+            <Link href="/">La Estación del Chipa</Link>
           </div>
           <Nav />
         </div>
