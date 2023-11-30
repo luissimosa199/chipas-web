@@ -1,13 +1,19 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
 const Nav = () => {
+  const path = usePathname();
   const [showMenu, toggleMenu] = useState<boolean>(false);
 
   const handleMobileMenu = () => {
     toggleMenu(!showMenu);
   };
+
+  useEffect(() => {
+    toggleMenu(false);
+  }, [path]);
 
   return (
     <div className="lg:flex lg:justify-between">
