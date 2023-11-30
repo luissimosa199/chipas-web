@@ -1,5 +1,6 @@
 import React from "react";
 import PhotoCard from "./PhotoCard";
+import CtaButton from "./CtaButton";
 
 const refsData = [
   {
@@ -42,7 +43,7 @@ const refsData = [
 const Refs = () => {
   return (
     <div
-      id="refs"
+      id="clientes"
       className="section relative z-0 py-12 md:py-16 bg-white"
     >
       <div className="container xl:max-w-6xl mx-auto px-4">
@@ -65,6 +66,9 @@ const Refs = () => {
             />
           );
         })}
+      </div>
+      <div className="flex justify-center">
+        <CtaButton />
       </div>
     </div>
   );

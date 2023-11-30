@@ -78,7 +78,7 @@ const Nav = () => {
           <li className="relative hover:text-black">
             <Link
               className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
-              href={path === "/" ? "#refs" : "/#refs"}
+              href={path === "/" ? "#clientes" : "/#clientes"}
             >
               Nuestros Clientes
             </Link>

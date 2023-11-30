@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import WsButton from "@/components/WsButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="es-419">
       <body className={inter.className}>{children}</body>
+      <WsButton tlf={3775413448} />
     </html>
   );
 }
